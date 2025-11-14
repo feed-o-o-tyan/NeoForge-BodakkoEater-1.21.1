@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bodakkoeater:item/bodakko"
+    "layer0": "bodakkoeater:item/bodakko_texture"
   }
 }
