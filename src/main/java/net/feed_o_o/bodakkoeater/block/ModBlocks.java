@@ -24,7 +24,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f)
                     .sound(SoundType.STONE)),
-            () -> new Item.Properties(ModFoodProperties.BLOCK_BODAKKO)
+            BlockBehaviour.Properties.of(food(ModFoodProperties.BLOCK_BODAKKO))
             );
 
     private static <T extends Block> DeferredBlock<T> registerEatableBlock(String nameeat, Supplier<T> block, FoodProperties food) {
