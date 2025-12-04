@@ -1,5 +1,6 @@
 package net.feed_o_o.bodakkoeater;
 
+import net.feed_o_o.bodakkoeater.block.ModBlocks;
 import net.feed_o_o.bodakkoeater.item.ModCreativeModeTabs;
 import net.feed_o_o.bodakkoeater.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -40,6 +41,7 @@ public class BodakkoEater {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -57,6 +59,8 @@ public class BodakkoEater {
             event.accept(ModItems.COOKED_BODAKKO);
             event.accept(ModItems.BODAKKO);
             event.accept(ModItems.SALT);
+            event.accept(ModItems.POUCHED_WATER);
+            event.accept(ModBlocks.BLOCK_BODAKKO);
         }
     }
 

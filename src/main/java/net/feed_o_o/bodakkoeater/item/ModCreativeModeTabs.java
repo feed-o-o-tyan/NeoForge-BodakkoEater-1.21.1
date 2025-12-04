@@ -1,6 +1,7 @@
 package net.feed_o_o.bodakkoeater.item;
 
 import net.feed_o_o.bodakkoeater.BodakkoEater;
+import net.feed_o_o.bodakkoeater.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BODAKKO);
                         output.accept(ModItems.SALT);
                         output.accept(ModItems.POUCHED_WATER);
+                        output.accept(ModBlocks.BLOCK_BODAKKO);
                     })
                     .build());
 
