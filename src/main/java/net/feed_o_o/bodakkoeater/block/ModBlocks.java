@@ -24,12 +24,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f)
                     .sound(SoundType.STONE)),
-            BlockBehaviour.Properties.of(food(ModFoodProperties.BLOCK_BODAKKO))
+
             );
 
     private static <T extends Block> DeferredBlock<T> registerEatableBlock(String nameeat, Supplier<T> block, FoodProperties food) {
         DeferredBlock<T> toReturn = BLOCKS.register(nameeat, block);
-        registerBlockItem(nameeat, toReturn);
+        registerEatableBlockItem(nameeat, toReturn, food);
         return toReturn;
     }
 
@@ -39,18 +39,15 @@ public class ModBlocks {
         return toReturn;
     }
 
-    // 普通の BlockItem（非可食）
-    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name,
-                () -> new BlockItem(block.get(), new Item.Properties()));
-    }
-
-    // 食べられる BlockItem（可食）
     private static <T extends Block> void registerEatableBlockItem(String nameeat, DeferredBlock<T> block, FoodProperties food) {
         ModItems.ITEMS.register(nameeat,
                 () -> new BlockItem(block.get(), new Item.Properties().food(food)));
     }
 
+    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
+        ModItems.ITEMS.register(name,
+                () -> new BlockItem(block.get(), new Item.Properties()));
+    }
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
