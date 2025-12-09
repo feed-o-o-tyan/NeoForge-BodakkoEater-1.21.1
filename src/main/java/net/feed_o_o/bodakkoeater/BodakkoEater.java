@@ -61,6 +61,8 @@ public class BodakkoEater {
             event.accept(ModItems.SALT);
             event.accept(ModItems.POUCHED_WATER);
             event.accept(ModBlocks.BLOCK_BODAKKO);
+            event.accept(ModBlocks.DOUBLE_BLOCK_BODAKKO);
+            event.accept(ModBlocks.TRIPLE_BLOCK_BODAKKO);
         }
     }
 

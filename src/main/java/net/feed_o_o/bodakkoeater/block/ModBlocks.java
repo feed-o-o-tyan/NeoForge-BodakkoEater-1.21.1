@@ -3,7 +3,6 @@ package net.feed_o_o.bodakkoeater.block;
 import net.feed_o_o.bodakkoeater.BodakkoEater;
 import net.feed_o_o.bodakkoeater.item.ModFoodProperties;
 import net.feed_o_o.bodakkoeater.item.ModItems;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,8 +23,22 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f)
                     .sound(SoundType.STONE)),
-
+            ModFoodProperties.BLOCK_BODAKKO
             );
+
+    public static final DeferredBlock<Block> DOUBLE_BLOCK_BODAKKO = registerEatableBlock("double_block_bodakko",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .sound(SoundType.STONE)),
+            ModFoodProperties.DOUBLE_BLOCK_BODAKKO
+    );
+
+    public static final DeferredBlock<Block> TRIPLE_BLOCK_BODAKKO = registerEatableBlock("triple_block_bodakko",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .sound(SoundType.STONE)),
+            ModFoodProperties.TRIPLE_BLOCK_BODAKKO
+    );
 
     private static <T extends Block> DeferredBlock<T> registerEatableBlock(String nameeat, Supplier<T> block, FoodProperties food) {
         DeferredBlock<T> toReturn = BLOCKS.register(nameeat, block);

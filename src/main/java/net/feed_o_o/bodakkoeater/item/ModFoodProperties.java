@@ -15,4 +15,12 @@ public class ModFoodProperties {
     public static final FoodProperties BLOCK_BODAKKO = new FoodProperties.Builder().nutrition(16).saturationModifier(1.80f)
             .effect(() -> new MobEffectInstance(MobEffects.SATURATION, 200, 0), 1.00f)
             .build();
+
+    public static final FoodProperties DOUBLE_BLOCK_BODAKKO = new FoodProperties.Builder().nutrition(32).saturationModifier(3.60f)
+            .effect(() -> new MobEffectInstance(MobEffects.SATURATION, 400, 0), 1.00f)
+            .build();
+
+    public static final FoodProperties TRIPLE_BLOCK_BODAKKO = new FoodProperties.Builder().nutrition(64).saturationModifier(7.20f)
+            .effect(() -> new MobEffectInstance(MobEffects.SATURATION, 800, 0), 1.00f)
+            .build();
 }

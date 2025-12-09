@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SALT);
                         output.accept(ModItems.POUCHED_WATER);
                         output.accept(ModBlocks.BLOCK_BODAKKO);
+                        output.accept(ModBlocks.DOUBLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.TRIPLE_BLOCK_BODAKKO);
                     })
                     .build());
 
