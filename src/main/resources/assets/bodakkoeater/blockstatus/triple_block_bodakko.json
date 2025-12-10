@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "bodakkoeater:triple_block/block_bodakko"
+      "model": "bodakkoeater:block/triple_block_bodakko_texture"
     }
   }
 }
