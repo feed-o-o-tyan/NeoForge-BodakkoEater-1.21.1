@@ -4,6 +4,14 @@
   "item.bodakkoeater.salt": "Salt",
   "item.bodakkoeater.pouched_water": "Pouched water",
   "block.bodakkoeater.block_bodakko": "Block of Bodakko",
+  "block.bodakkoeater.double_block_bodakko": "Double Block of Bodakko",
+  "block.bodakkoeater.triple_block_bodakko": "Triple compressed block of Bodakko",
+  "block.bodakkoeater.quadruple_block_bodakko": "Quadruple compressed block of Bodakko",
+  "block.bodakkoeater.quintuple_block_bodakko": "Quintuple compressed block of Bodakko",
+  "block.bodakkoeater.sextuple_block_bodakko": "Sextuple compressed lock of Bodakko",
+  "block.bodakkoeater.septuple_block_bodakko": "Septuple compressed lock of Bodakko",
+  "block.bodakkoeater.octuple_block_bodakko": "Octuple compressed block of Bodakko",
+  "block.bodakkoeater.nonuple_block_bodakko": "Nonuple compressed block of Bodakko",
 
   "creativetab.bodakkoeater.bodakko_tab": "Bodakko Eater"
 }

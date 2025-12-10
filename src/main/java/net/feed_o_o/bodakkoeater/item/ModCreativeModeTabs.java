@@ -26,6 +26,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BLOCK_BODAKKO);
                         output.accept(ModBlocks.DOUBLE_BLOCK_BODAKKO);
                         output.accept(ModBlocks.TRIPLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.QUADRUPLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.QUINTUPLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.SEXTUPLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.SEPTUPLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.OCTUPLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.NONUPLE_BLOCK_BODAKKO);
                     })
                     .build());
 

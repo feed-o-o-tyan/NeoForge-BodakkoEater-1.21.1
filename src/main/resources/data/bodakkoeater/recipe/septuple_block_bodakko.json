@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "b": {
+      "item": "bodakkoeater:sextuple_block_bodakko"
+    }
+  },
+  "pattern": [
+    "bbb",
+    "bbb",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bodakkoeater:septuple_block_bodakko"
+  }
+}

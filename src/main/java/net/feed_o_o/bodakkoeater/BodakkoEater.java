@@ -63,6 +63,12 @@ public class BodakkoEater {
             event.accept(ModBlocks.BLOCK_BODAKKO);
             event.accept(ModBlocks.DOUBLE_BLOCK_BODAKKO);
             event.accept(ModBlocks.TRIPLE_BLOCK_BODAKKO);
+            event.accept(ModBlocks.QUADRUPLE_BLOCK_BODAKKO);
+            event.accept(ModBlocks.QUINTUPLE_BLOCK_BODAKKO);
+            event.accept(ModBlocks.SEXTUPLE_BLOCK_BODAKKO);
+            event.accept(ModBlocks.SEPTUPLE_BLOCK_BODAKKO);
+            event.accept(ModBlocks.OCTUPLE_BLOCK_BODAKKO);
+            event.accept(ModBlocks.NONUPLE_BLOCK_BODAKKO);
         }
     }
 

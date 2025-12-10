@@ -3,5 +3,13 @@
   "item.bodakkoeater.bodakko": "生のぼだっこ",
   "item.bodakkoeater.salt": "塩",
   "item.bodakkoeater.pouched_water": "小分けされた水",
-  "block.bodakkoeater.block_bodakko": "ぼだっこブロック"
+  "block.bodakkoeater.block_bodakko": "ぼだっこブロック",
+  "block.bodakkoeater.double_block_bodakko": "2x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.triple_block_bodakko": "3x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.quadruple_block_bodakko": "4x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.quintuple_block_bodakko": "5x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.sextuple_block_bodakko": "6x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.septuple_block_bodakko": "7x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.octuple_block_bodakko": "8x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.nonuple_block_bodakko": "9x 圧縮ぼだっこブロック"
 }

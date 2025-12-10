@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "bodakkoeater:block/quintuple_block_bodakko_texture"
+  }
+}
