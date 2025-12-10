@@ -45,6 +45,6 @@ public class ModFoodProperties {
             .build();
 
     public static final FoodProperties NONUPLE_BLOCK_BODAKKO = new FoodProperties.Builder().nutrition(4096).saturationModifier(460.80f)
-            .effect(() -> new MobEffectInstance(MobEffects.SATURATION, 0), 1.00f)
+            .effect(() -> new MobEffectInstance(MobEffects.SATURATION,2147483647, 0), 1.00f)
             .build();
 }

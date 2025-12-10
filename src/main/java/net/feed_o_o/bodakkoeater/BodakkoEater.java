@@ -4,9 +4,6 @@ import net.feed_o_o.bodakkoeater.block.ModBlocks;
 import net.feed_o_o.bodakkoeater.item.ModCreativeModeTabs;
 import net.feed_o_o.bodakkoeater.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -25,7 +22,6 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(BodakkoEater.MOD_ID)
 public class BodakkoEater {
     public static final String MOD_ID = "bodakkoeater";
-    public static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.

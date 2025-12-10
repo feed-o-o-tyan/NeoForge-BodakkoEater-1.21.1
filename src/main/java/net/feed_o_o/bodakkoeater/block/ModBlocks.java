@@ -1,6 +1,7 @@
 package net.feed_o_o.bodakkoeater.block;
 
 import net.feed_o_o.bodakkoeater.BodakkoEater;
+import net.feed_o_o.bodakkoeater.item.EatableBlockItem;
 import net.feed_o_o.bodakkoeater.item.ModFoodProperties;
 import net.feed_o_o.bodakkoeater.item.ModItems;
 import net.minecraft.world.food.FoodProperties;
@@ -96,7 +97,7 @@ public class ModBlocks {
 
     private static <T extends Block> void registerEatableBlockItem(String nameeat, DeferredBlock<T> block, FoodProperties food) {
         ModItems.ITEMS.register(nameeat,
-                () -> new BlockItem(block.get(), new Item.Properties().food(food)));
+                () -> new EatableBlockItem(block.get(), new Item.Properties(), food));
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
