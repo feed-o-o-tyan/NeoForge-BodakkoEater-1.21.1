@@ -36,49 +36,49 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> TRIPLE_BLOCK_BODAKKO = registerEatableBlock("triple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f)
+                    .strength(3f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.TRIPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> QUADRUPLE_BLOCK_BODAKKO = registerEatableBlock("quadruple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(8f)
+                    .strength(5f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.QUADRUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> QUINTUPLE_BLOCK_BODAKKO = registerEatableBlock("quintuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(16f)
+                    .strength(8f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.QUINTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> SEXTUPLE_BLOCK_BODAKKO = registerEatableBlock("sextuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(32f)
+                    .strength(13f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.SEXTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> SEPTUPLE_BLOCK_BODAKKO = registerEatableBlock("septuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(64f)
+                    .strength(21f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.SEPTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> OCTUPLE_BLOCK_BODAKKO = registerEatableBlock("octuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(128f)
+                    .strength(34f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.OCTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> NONUPLE_BLOCK_BODAKKO = registerEatableBlock("nonuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(256f)
+                    .strength(55f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.NONUPLE_BLOCK_BODAKKO
     );
