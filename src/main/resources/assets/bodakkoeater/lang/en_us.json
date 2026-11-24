@@ -1,8 +1,7 @@
 {
   "item.bodakkoeater.cooked_bodakko": "Bodakko (More salty salted salmon)",
   "item.bodakkoeater.bodakko": "Raw Bodakko",
-  "item.bodakkoeater.salt": "Salt",
-  "item.bodakkoeater.pouched_water": "Pouched water",
+  "item.bodakkoeater.salt": "Moshio (Seaweed Salt)",
   "block.bodakkoeater.block_bodakko": "Block of Bodakko",
   "block.bodakkoeater.double_block_bodakko": "Double Block of Bodakko",
   "block.bodakkoeater.triple_block_bodakko": "Triple compressed block of Bodakko",
@@ -12,6 +11,15 @@
   "block.bodakkoeater.septuple_block_bodakko": "Septuple compressed lock of Bodakko",
   "block.bodakkoeater.octuple_block_bodakko": "Octuple compressed block of Bodakko",
   "block.bodakkoeater.nonuple_block_bodakko": "Nonuple compressed block of Bodakko",
-
-  "creativetab.bodakkoeater.bodakko_tab": "Bodakko Eater"
+  "block.bodakkoeater.nutrient_device": "Nutrient delivery device",
+  "creativetab.bodakkoeater.bodakko_tab": "Bodakko Eater",
+  "container.bodakkoeater.nutrient_device": "Nutrient delivery device",
+  "gui.bodakkoeater.input_faces": "Input faces",
+  "gui.bodakkoeater.face.down": "Bottom",
+  "gui.bodakkoeater.face.north": "North",
+  "gui.bodakkoeater.face.south": "South",
+  "gui.bodakkoeater.face.west": "West",
+  "gui.bodakkoeater.face.east": "East",
+  "gui.bodakkoeater.on": "ON",
+  "gui.bodakkoeater.off": "OFF"
 }

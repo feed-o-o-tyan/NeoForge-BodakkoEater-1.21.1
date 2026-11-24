@@ -1,6 +1,9 @@
 package net.feed_o_o.bodakkoeater;
 
 import net.feed_o_o.bodakkoeater.block.ModBlocks;
+import net.feed_o_o.bodakkoeater.block.entity.ModBlockEntities;
+import net.feed_o_o.bodakkoeater.client.NutrientDeviceScreen;
+import net.feed_o_o.bodakkoeater.menu.ModMenuTypes;
 import net.feed_o_o.bodakkoeater.item.ModCreativeModeTabs;
 import net.feed_o_o.bodakkoeater.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -14,6 +17,9 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -38,6 +44,11 @@ public class BodakkoEater {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        // Expose the machine's item handler to hoppers / pipes
+        modEventBus.addListener(this::registerCapabilities);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -49,13 +60,18 @@ public class BodakkoEater {
 
     }
 
+    private void registerCapabilities(RegisterCapabilitiesEvent event) {
+        // Not available from the top face: getSideHandler returns null there.
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ModBlockEntities.NUTRIENT_DEVICE.get(),
+                (machine, side) -> machine.getSideHandler(side));
+    }
+
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COOKED_BODAKKO);
             event.accept(ModItems.BODAKKO);
             event.accept(ModItems.SALT);
-            event.accept(ModItems.POUCHED_WATER);
             event.accept(ModBlocks.BLOCK_BODAKKO);
             event.accept(ModBlocks.DOUBLE_BLOCK_BODAKKO);
             event.accept(ModBlocks.TRIPLE_BLOCK_BODAKKO);
@@ -80,6 +96,11 @@ public class BodakkoEater {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.NUTRIENT_DEVICE.get(), NutrientDeviceScreen::new);
         }
     }
 }

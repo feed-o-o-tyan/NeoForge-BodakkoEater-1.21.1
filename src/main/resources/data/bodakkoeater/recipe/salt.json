@@ -2,12 +2,12 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,
-  "experience": 0.20,
+  "experience": 0.2,
   "ingredient": {
-    "item": "bodakkoeater:pouched_water"
+    "item": "minecraft:dried_kelp"
   },
   "result": {
     "id": "bodakkoeater:salt",
-    "count": 4
+    "count": 1
   }
 }

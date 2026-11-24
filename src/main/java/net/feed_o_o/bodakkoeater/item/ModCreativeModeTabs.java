@@ -22,7 +22,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COOKED_BODAKKO);
                         output.accept(ModItems.BODAKKO);
                         output.accept(ModItems.SALT);
-                        output.accept(ModItems.POUCHED_WATER);
                         output.accept(ModBlocks.BLOCK_BODAKKO);
                         output.accept(ModBlocks.DOUBLE_BLOCK_BODAKKO);
                         output.accept(ModBlocks.TRIPLE_BLOCK_BODAKKO);
@@ -32,6 +31,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SEPTUPLE_BLOCK_BODAKKO);
                         output.accept(ModBlocks.OCTUPLE_BLOCK_BODAKKO);
                         output.accept(ModBlocks.NONUPLE_BLOCK_BODAKKO);
+                        output.accept(ModBlocks.NUTRIENT_DEVICE);
                     })
                     .build());
 

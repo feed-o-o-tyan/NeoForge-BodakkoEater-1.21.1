@@ -1,8 +1,7 @@
 {
   "item.bodakkoeater.cooked_bodakko": "ぼだっこ（塩辛い塩鮭）",
   "item.bodakkoeater.bodakko": "生のぼだっこ",
-  "item.bodakkoeater.salt": "塩",
-  "item.bodakkoeater.pouched_water": "小分けされた水",
+  "item.bodakkoeater.salt": "藻塩",
   "block.bodakkoeater.block_bodakko": "ぼだっこブロック",
   "block.bodakkoeater.double_block_bodakko": "2x 圧縮ぼだっこブロック",
   "block.bodakkoeater.triple_block_bodakko": "3x 圧縮ぼだっこブロック",
@@ -11,5 +10,15 @@
   "block.bodakkoeater.sextuple_block_bodakko": "6x 圧縮ぼだっこブロック",
   "block.bodakkoeater.septuple_block_bodakko": "7x 圧縮ぼだっこブロック",
   "block.bodakkoeater.octuple_block_bodakko": "8x 圧縮ぼだっこブロック",
-  "block.bodakkoeater.nonuple_block_bodakko": "9x 圧縮ぼだっこブロック"
+  "block.bodakkoeater.nonuple_block_bodakko": "9x 圧縮ぼだっこブロック",
+  "block.bodakkoeater.nutrient_device": "栄養供給機",
+  "container.bodakkoeater.nutrient_device": "栄養供給機",
+  "gui.bodakkoeater.input_faces": "搬入する面",
+  "gui.bodakkoeater.face.down": "下",
+  "gui.bodakkoeater.face.north": "北",
+  "gui.bodakkoeater.face.south": "南",
+  "gui.bodakkoeater.face.west": "西",
+  "gui.bodakkoeater.face.east": "東",
+  "gui.bodakkoeater.on": "ON",
+  "gui.bodakkoeater.off": "OFF"
 }

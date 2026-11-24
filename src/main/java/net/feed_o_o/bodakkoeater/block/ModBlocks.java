@@ -1,6 +1,7 @@
 package net.feed_o_o.bodakkoeater.block;
 
 import net.feed_o_o.bodakkoeater.BodakkoEater;
+import net.feed_o_o.bodakkoeater.block.custom.NutrientDeviceBlock;
 import net.feed_o_o.bodakkoeater.item.EatableBlockItem;
 import net.feed_o_o.bodakkoeater.item.ModFoodProperties;
 import net.feed_o_o.bodakkoeater.item.ModItems;
@@ -22,66 +23,73 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> BLOCK_BODAKKO = registerEatableBlock("block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1f)
+                    .strength(1f, 10f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.BLOCK_BODAKKO
             );
 
     public static final DeferredBlock<Block> DOUBLE_BLOCK_BODAKKO = registerEatableBlock("double_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f)
+                    .strength(2f, 15f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.DOUBLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> TRIPLE_BLOCK_BODAKKO = registerEatableBlock("triple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f)
+                    .strength(3f, 20f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.TRIPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> QUADRUPLE_BLOCK_BODAKKO = registerEatableBlock("quadruple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f)
+                    .strength(5f,25f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.QUADRUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> QUINTUPLE_BLOCK_BODAKKO = registerEatableBlock("quintuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(8f)
+                    .strength(8f, 30f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.QUINTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> SEXTUPLE_BLOCK_BODAKKO = registerEatableBlock("sextuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(13f)
+                    .strength(13f, 35f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.SEXTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> SEPTUPLE_BLOCK_BODAKKO = registerEatableBlock("septuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(21f)
+                    .strength(21f, 40f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.SEPTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> OCTUPLE_BLOCK_BODAKKO = registerEatableBlock("octuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(34f)
+                    .strength(34f, 45f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.OCTUPLE_BLOCK_BODAKKO
     );
 
     public static final DeferredBlock<Block> NONUPLE_BLOCK_BODAKKO = registerEatableBlock("nonuple_block_bodakko",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(55f)
+                    .strength(55f, 50f)
                     .sound(SoundType.STONE)),
             ModFoodProperties.NONUPLE_BLOCK_BODAKKO
     );
+
+    public static final DeferredBlock<Block> NUTRIENT_DEVICE = registerBlock("nutrient_device",
+            () -> new NutrientDeviceBlock(BlockBehaviour.Properties.of()
+                    .strength(3.5f, 5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+            ));
 
     private static <T extends Block> DeferredBlock<T> registerEatableBlock(String nameeat, Supplier<T> block, FoodProperties food) {
         DeferredBlock<T> toReturn = BLOCKS.register(nameeat, block);
