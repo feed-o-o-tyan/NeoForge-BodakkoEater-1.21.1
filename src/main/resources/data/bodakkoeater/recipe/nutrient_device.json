@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_block"
+    },
+    "t": {
+      "item": "bodakkoeater:triple_block_bodakko"
+    },
+    "d": {
+      "item": "bodakkoeater:quadruple_block_bodakko"
+    }
+  },
+  "pattern": [
+    "iti",
+    "tdt",
+    "iti"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bodakkoeater:nutrient_device"
+  }
+}
